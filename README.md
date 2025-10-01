@@ -14,20 +14,17 @@
 
 
 ### **Problem 1 - LaTeX 數位化**
-若 $$x(t)=e^{j\Omega t}$$求 $$y(t)$$（RC 低通，輸出在電容）
-
+若 $$x(t)=e^{j\Omega t}$$
+求 $$y(t)$$（RC 低通，輸出在電容）
 $$x(t)=RI(t)+y(t)$$
 $$I(t)=\frac{dQ(t)}{dt}=C\frac{dy(t)}{dt}$$
-
 $微分方程：(I(t)代入)$
 $$
 x(t)=C\frac{dy(t)}{dt}R+y(t) 
 $$
-
 $$
 =RC\frac{dy(t)}{dt}+y(t) 
 $$
-
 $傅立葉轉換$
 $$
 X(j\Omega)=RC(j\Omega)Y(j\Omega)+Y(j\Omega)
@@ -36,12 +33,10 @@ $同除以Y(j\omega)$
 $$
 \frac{X(j\Omega)}{Y(j\Omega)}=RC(j\Omega)+1
 $$
-
 整理一下
 $$
 \frac{Y(j\Omega)}{X(j\Omega)}=\frac{1}{RC(j\Omega)+1} \equiv H(j\Omega)
 $$
-
 $結果 :$
 $$
 y(t)=H(j\Omega)\,e^{j\Omega t}=\frac{1}{1+j\Omega RC}\,e^{j\Omega t}
@@ -56,13 +51,10 @@ $$
 
 微分方程：
 $$x(t)=RC\frac{dy(t)}{dt}+y(t)$$
-
 代入$x(t)=e^{j\Omega t}u(t)$
-
 $$
 e^{j\Omega t}u(t)=RC\frac{dy(t)}{dt}+y(t)
 $$
-
 解為特解加齊次解：
 $$y(t)=y_h(t)+y_p(t)$$
 $y_h(t)(暫態響應):$
