@@ -309,14 +309,14 @@ $$ = \underbrace{\frac{\frac{\tau}{RC+\tau}}{1-e^{j\omega}\frac{RC}{RC+\tau}} \l
 
 ## 程式碼詳解：WAV 一階 RC 數位濾波程式
 
-> 原始程式為使用後向歐拉（backward Euler）離散化的一階低通濾波器，並同時對 WAV 檔做理論分析（複數指數訊號）與實際濾波處理。
+> 原始程式為使用離散化的一階低通濾波器，並同時對 WAV 檔做理論分析（複數指數訊號）與實際濾波處理。
 
 ---
 
 ## 目錄
 
 1. 檔案與包含檔（`#include`）
-2. 宏與常數定義（`#define`）
+2. 變數與常數定義（`#define`）
 3. `WAVHeader` 結構（注意事項）
 4. `extract_frequency_from_filename`：從檔名擷取測試頻率
 5. `print_simulation_analysis`：理論與模擬分析逐行說明
