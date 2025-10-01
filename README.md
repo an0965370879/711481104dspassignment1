@@ -21,6 +21,8 @@
 
 求 $$y(t)（RC 低通，輸出在電容）$$
 
+$RC電路公式:$
+
 $$x(t)=RI(t)+y(t)$$
 $$I(t)=\frac{dQ(t)}{dt}=C\frac{dy(t)}{dt}$$
 
