@@ -31,6 +31,7 @@ $$=RC\frac{dy(t)}{dt}+y(t)$$
 
 $傅立葉轉換$
 $$X(j\Omega)=RC(j\Omega)Y(j\Omega)+Y(j\Omega)$$
+
 $同除以Y(j\omega)$
 $$\frac{X(j\Omega)}{Y(j\Omega)}=RC(j\Omega)+1$$
 
