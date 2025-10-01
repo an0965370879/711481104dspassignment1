@@ -17,9 +17,9 @@
 
 ---
 
-$$若x(t)=e^{j\Omega t}$$
+若 $$x(t)=e^{j\Omega t}$$
 
-$$求y(t)（RC 低通，輸出在電容）$$
+求 $$y(t)（RC 低通，輸出在電容）$$
 
 $$x(t)=RI(t)+y(t)$$
 $$I(t)=\frac{dQ(t)}{dt}=C\frac{dy(t)}{dt}$$
@@ -52,13 +52,10 @@ $$y(t)=H(j\Omega)\,e^{j\Omega t}=\frac{1}{1+j\Omega RC}\,e^{j\Omega t}$$
 ![S__5816361_0](https://hackmd.io/_uploads/r1wKfO9nxl.jpg)
 
 ### **Problem 2 - LaTeX 數位化**
-若
 
-$$x(t)=e^{j\Omega t}u(t)$$
+若 $$x(t)=e^{j\Omega t}u(t)$$
 
-求
-
-$$y(t)（初始電容電壓假設為 0）$$
+求 $$y(t)（初始電容電壓假設為 0）$$
 
 微分方程：
 
