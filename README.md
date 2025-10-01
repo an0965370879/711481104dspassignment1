@@ -14,6 +14,9 @@
 
 
 ### **Problem 1 - LaTeX 數位化**
+
+---
+
 若 $$x(t)=e^{j\Omega t}$$
 求 $$y(t)$$（RC 低通，輸出在電容）
 $$x(t)=RI(t)+y(t)$$
