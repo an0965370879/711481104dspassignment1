@@ -53,59 +53,96 @@ $$y(t)=H(j\Omega)\,e^{j\Omega t}=\frac{1}{1+j\Omega RC}\,e^{j\Omega t}$$
 
 ### **Problem 2 - LaTeX 數位化**
 若 $$x(t)=e^{j\Omega t}u(t)$$
+
 求 $$y(t)$$（初始電容電壓假設為 0）
 
 微分方程：
+
 $$x(t)=RC\frac{dy(t)}{dt}+y(t)$$
+
 代入$x(t)=e^{j\Omega t}u(t)$
-$$
-e^{j\Omega t}u(t)=RC\frac{dy(t)}{dt}+y(t)
-$$
+
+$$e^{j\Omega t}u(t)=RC\frac{dy(t)}{dt}+y(t)$$
+
 解為特解加齊次解：
+
 $$y(t)=y_h(t)+y_p(t)$$
+
 $y_h(t)(暫態響應):$
+
 $$x(t)=RC\frac{dy}{dt}+y$$
+
 $x(t)=0代入$
+
 $$0=RC\frac{dy}{dt}+y$$
+
 $同除以RC$
+
 $$\frac{dy}{dt}=\frac{-1}{RC}y$$
+
 $移項整理$
+
 $$\frac{dy}{y}=\frac{-1}{RC}dt$$
+
 $兩邊積分$
+
 $$ln|y|=\frac{-t}{RC}+C$$
+
 $兩邊取指數$
+
 $$|y|=C_1e^{\frac{-t}{RC}}=y_h(t),(C_1=e^{c}為常數)$$
 
 ---
 
 $y_p(t)(穩態響應):$
+
 $$y_p(t)=Ke^{j\Omega t}$$
+
 $代入e^{j\Omega t}u(t)=RC\frac{dy(t)}{dt}+y(t)$
+
 $$e^{j\Omega t}=RC (j\Omega K e^{j\Omega t})+K e^{j\Omega t}$$
+
 $同除e^{j\Omega t}$
+
 $$1=RCj\Omega K+K$$
+
 $提出K且做整理$
+
 $$K=\frac{1}{1+RCj\Omega}$$
+
 $代回y_p(t)=Ke^{j\Omega t}$
+
 $$y_p(t)=\frac{1}{1+RCj\Omega}e^{j\Omega t}$$
 
 ---
 暫態部分： $$y_h(t)=C_1e^{\frac{-t}{RC}},(C_1=e^{c}為常數)$$（隨時間衰減）
+
 穩態部分： $$y_p(t)=\frac{1}{1+RCj\Omega}e^{j\Omega t}$$  
 
 ---
 
 $$y(t)=y_h(t)+y_p(t)$$
+
 $代入y_h(t),y_p(t)$
+
 $$y(t)=C_1e^{\frac{-t}{RC}}+\frac{1}{1+RCj\Omega}e^{j\Omega t},t\ge0$$
+
 $乘上u(t)$
+
 $$y(t)=(C_1e^{\frac{-t}{RC}}+\frac{1}{1+RCj\Omega}e^{j\Omega t})u(t)$$
+
 $假設輸入t<0為0,則輸出在t=0^{-}會為0 :$ 
+
 $令t=0時$
+
 $$y(0)=C_1+\frac{1}{1+j\Omega RC}=0$$
+
 $整理一下$
+
 $$C_1=\frac{-1}{1+j\Omega RC}$$
+
 $將C_1代回y(t)$
+
 $$y(t)=(\frac{1}{1+RCj\Omega}e^{j\Omega t}-\frac{1}{1+j\Omega RC}e^{\frac{-t}{RC}})u(t)$$
 
 ---
@@ -119,26 +156,40 @@ $$y(t)=(\frac{1}{1+RCj\Omega}e^{j\Omega t}-\frac{1}{1+j\Omega RC}e^{\frac{-t}{RC
 
 ### **Problem 3 - LaTeX 數位化**
 若 $$x(t)=e^{j\Omega t}$$
+
 求 $$y(t)$$
 
 $從Problem 1 得$
+
 $$H(\Omega)=\frac{1}{1+j \Omega RC},y(t)=\frac{1}{1+j \Omega RC}e^{j\Omega t}$$
+
 $題目給的參數$
+
 $$R=1000\Omega , C=\frac{1}{2\pi\times400\times1000},\Omega=2\pi f$$
 $代入$
+
 $$j\Omega RC=\frac{f}{400}j$$
+
 $example :$ $f=100Hz$
+
 $$H(\Omega)=\frac{1}{1+\frac{100}{400}j}=\frac{1}{1+0.25j}$$
+
 $$|H(\Omega)|=\frac{1}{\sqrt{1^2+0.25^2}}\approx0.9701$$
+
 $$\angle H(\Omega)=-arctan(\frac{0.25}{1})\approx-14.04$$
+
 $So:$
+
 $$H(\Omega)=\approx0.9701e^{-j14.04^\circ}$$
 
 $y(t):$
+
 $$\Omega=2\pi\times10=200\pi\      rad/s$$
+
 $$y(t)=(0.9701e^{-j14.04^\circ})e^{j(200\pi t)}$$
 
 $$ =0.9701e^{j(200\pi t-14.04^\circ)}$$
+
 $$ 以此類推f = 400,3000Hz照著上述的運算邏輯便能得到結果 $$
 
 ### **Problem 4**
@@ -146,16 +197,27 @@ $$ 以此類推f = 400,3000Hz照著上述的運算邏輯便能得到結果 $$
 
 ### **Problem 4 - LaTeX 數位化**
 若 $$x(t)=e^{j\Omega t}u(t)$$
+
 求 $$y(t)$$
+
 $從Problem 2 得:$
+
 $$y(t)=(\frac{1}{1+RCj\Omega}e^{j\Omega t}-\frac{1}{1+j\Omega RC}e^{\frac{-t}{RC}})u(t)$$
+
 $題目給的參數$
+
 $$R=1000\Omega , C=\frac{1}{2\pi\times400\times1000},\Omega=2\pi f$$
+
 $將參數代入y(t)$
+
 $$y(t)=(\frac{1}{1+j\frac{f}{400}}e^{2\pi f tj}-\frac{1}{1+j\frac{f}{400}}e^{-800\pi t})u(t)$$
+
 $$=\frac{1}{1+j\frac{f}{400}}(e^{2\pi ftj}-e^{-800\pi t})u(t)$$
+
 $example :$ $f=100Hz代入y(t)$
+
 $$y(t)=0.9701e^{-j14.04^\circ}(e^{2\pi ftj}-e^{-800\pi t})u(t)$$
+
 $$ 以此類推f = 400,3000Hz代入y(t)便能得到結果 $$
 
 ### **Problem 5**
@@ -165,16 +227,26 @@ $$ 以此類推f = 400,3000Hz代入y(t)便能得到結果 $$
 
 ### **Problem 5 - LaTeX 數位化**
 若 $$x[n]=exp(j\omega n)$$
+
 求 $$y[n]=H(\Omega)exp(j\omega n)$$
+
 $一階差分方程:$
+
 $$y[n]=\frac{RC}{RC+\tau}y[n-1]+\frac{\tau}{\tau+RC}x[n],\tau=\frac{1}{f_s}$$
+
 $DTFT:$
+
 $$Y(e^{j\omega})=\frac{RC}{RC+\tau}Y(e^{j\omega})e^{-j\omega}+\frac{\tau}{RC+\tau}X(e^{j\omega})$$
+
 $移項整理$
+
 $$Y(e^{j\omega})(1-\frac{RC}{RC+\tau}e^{-j\omega})=\frac{\tau}{RC+\tau}X(e^{j\omega})$$
 $移項整理$
+
 $$\frac{Y(e^{j\omega})}{X(e^{j\omega})}=\frac{\frac{\tau}{RC+\tau}}{1-\frac{RC}{RC+\tau}e^{-j\omega}}=\frac{\tau}{RC+\tau-RCe^{-j\omega}}=H(j\omega)$$
+
 $結果:$
+
  $$y[n]=H(\Omega)exp(j\omega n)=\frac{\tau}{RC+\tau-RCe^{-j\omega}}exp(j\omega n)$$
  $$=\frac{\frac{1}{f_s}}{RC+\frac{1}{f_s}-RCe^{-j\frac{2\pi f}{f_s}}}exp(j\frac{2\pi f}{f_s}n)$$
 
