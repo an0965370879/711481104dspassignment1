@@ -30,15 +30,19 @@ $$x(t)=C\frac{dy(t)}{dt}R+y(t)$$
 $$=RC\frac{dy(t)}{dt}+y(t)$$
 
 $傅立葉轉換$
+
 $$X(j\Omega)=RC(j\Omega)Y(j\Omega)+Y(j\Omega)$$
 
 $同除以Y(j\omega)$
+
 $$\frac{X(j\Omega)}{Y(j\Omega)}=RC(j\Omega)+1$$
 
 $整理一下$
+
 $$\frac{Y(j\Omega)}{X(j\Omega)}=\frac{1}{RC(j\Omega)+1} \equiv H(j\Omega)$$
 
 $結果 :$
+
 $$y(t)=H(j\Omega)\,e^{j\Omega t}=\frac{1}{1+j\Omega RC}\,e^{j\Omega t}$$
 
 ---
